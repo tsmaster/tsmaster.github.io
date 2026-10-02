@@ -1,0 +1,210 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>David “Dave” LeCompte · Game AI Engineer</title>
+<meta name="description" content="Game AI engineer: tactical AI for Star Wars: Zero Company and BattleTech. Behavior trees, planning, pathfinding, influence maps.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,400;0,500;0,600;1,400&family=Barlow+Condensed:wght@600;700&family=JetBrains+Mono:wght@400;500&display=swap">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="hero">
+  <img class="banner" src="images/banner.png" width="1584" height="396"
+       alt="Hexagonal tiles showing games and projects from my career, including Samurai Jack, Tornado Outbreak, BattleTech, Niantic, Core and Star Wars: Zero Company">
+  <div class="wrap hero-text">
+    <h1>David “Dave” LeCompte</h1>
+    <p class="headline">Game AI Engineer · Behavior trees, planning, pathfinding · Building opponents worth outsmarting</p>
+    <nav class="links" aria-label="Contact and profiles">
+      <a href="https://www.linkedin.com/in/david-lecompte-283b0a/">LinkedIn</a>
+      <a href="https://github.com/tsmaster">GitHub</a>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap">
+
+  <section id="about" aria-labelledby="about-h">
+    <h2 id="about-h">About</h2>
+    <p class="lede">I build game AI systems that make challenging gameplay fun. Most recently, I built AI for enemies in Star Wars: Zero Company. Before that, I built BattleTech's entire behavior tree and influence map system from scratch.</p>
+    <p>Game AI techniques I've used: behavior trees, influence maps, pathfinding, planning, adversarial search and finite state machines. Beyond AI, I've led teams, ported games across hardware generations, and built the engines and platforms other developers use. I've shipped in Unreal Engine and Unity, and I'm currently learning Godot.</p>
+    <p>I'm looking for my next role as an individual contributor building game AI.</p>
+  </section>
+
+  <section id="work" aria-labelledby="work-h">
+    <h2 id="work-h">Selected work</h2>
+
+    <article class="project">
+      <header>
+        <h3>Star Wars: Zero Company</h3>
+        <p class="meta"><span>Bit Reactor</span><span>Principal AI Engineer</span><span>May 2024 – present</span><span>Windows, PS5, Xbox</span><span>Unreal Engine</span></p>
+      </header>
+      <p>I built AI for enemies in Star Wars: Zero Company, a turn-based tactics game, as one of two AI engineers working with one AI designer. The AI is a one-turn lookahead planner that uses influence-map techniques to score possible move locations and enemy targets. I worked on many of the enemy systems, including:</p>
+      <ul>
+        <li><strong>Droideka targeting:</strong> Droidekas look for firing positions where they can hit several targets at once, and move there in preference to a single-target shot.</li>
+        <li><strong>Reinforcements:</strong> new characters entering the battlefield find good cover on their own as they arrive.</li>
+        <li><strong>Ability targeting:</strong> how enemies choose targets for their abilities, worked out with the UI systems lead.</li>
+      </ul>
+      <p class="media">Videos: <a href="https://www.youtube.com/watch?v=WxLUZ1omFA8&amp;t=31s">Official Gameplay Trailer</a> · <a href="https://www.youtube.com/watch?v=AxAgeglgSeA">Official Final Trailer</a></p>
+    </article>
+
+    <article class="project">
+      <header>
+        <h3>Project Archer: AR digital twins</h3>
+        <p class="meta"><span>Walmart</span><span>Senior Engineer, then Tech Lead</span><span>May 2022 – February 2024</span><span>HoloLens 2, Magic Leap 2</span><span>Unity</span></p>
+      </header>
+      <p>Project Archer was a tech innovation studio within Store No 8, Walmart's tech incubation division. First as a senior engineer and then as tech lead, I built augmented reality digital twin systems in Unity to help employees get work done and customers find great products.</p>
+      <p>We investigated building "as built" digital twins of real Walmart stores. To line the headsets up with the model, we designed 3D-printed frames for ArUco markers: a Magic Leap 2 could spot a marker, anchor itself to it, and match what it saw to where the digital twin said the shelving units were.</p>
+      <p>We also evaluated headsets for restocking: an associate could scan inventory barcodes in the back room, and the headset would query Walmart's inventory service to tell whether a box needed to go out to the shelves where customers could reach it.</p>
+    </article>
+
+    <article class="project">
+      <header>
+        <h3>Core</h3>
+        <p class="meta"><span>Manticore Games</span><span>Senior Engineer</span><span>September 2020 – May 2022</span><span>PC</span><span>Unreal Engine</span></p>
+      </header>
+      <p>Core is a platform for creating and sharing games. I worked on the tools that game creators use:</p>
+      <ul>
+        <li><strong>Raycasting:</strong> updated the raycasting features creators use in their games.</li>
+        <li><strong>Pathfinding:</strong> exposed automatic navigation to creators, including navmesh generation and dynamic updates, so their characters could find their way around without hand-built paths.</li>
+      </ul>
+    </article>
+
+    <article class="project">
+      <header>
+        <h3>Niantic Real World Platform</h3>
+        <p class="meta"><span>Niantic</span><span>Senior Client Publishing Engineer</span><span>September 2018 – September 2020</span><span>iOS, Android</span><span>Unity</span></p>
+      </header>
+      <p>I worked on the client side of Niantic's Real World Platform, the technology behind its location-based games, and helped outside studios build on it:</p>
+      <ul>
+        <li><strong>Map tiles:</strong> worked on how the real-world map is displayed in games, and presented a talk on the map tile architecture at PAX Dev 2019 (<a href="#talks">see Talks</a>).</li>
+        <li><strong>Camera rig:</strong> built a standardized camera rig for games on the platform.</li>
+        <li><strong>Developer onboarding:</strong> worked with external developer teams to get them started on the platform.</li>
+      </ul>
+    </article>
+
+    <article class="project">
+      <header>
+        <h3>BattleTech</h3>
+        <p class="meta"><span>Harebrained Schemes</span><span>Lead AI Engineer</span><span>February 2016 – September 2018</span><span>Windows, macOS, Linux</span><span>Unity</span></p>
+      </header>
+      <p>I built BattleTech's entire AI system from scratch, as the only AI engineer, working with one AI designer. Enemy squads of four mechs had to fight as a team. The system's three main parts:</p>
+      <ul>
+        <li><strong>Behavior trees:</strong> the AI's "brain" was described in XML. Python tools turned that description into C# code that ran at full speed inside the Unity project, and drew each tree as a GraphViz flowchart so the designer and I could see exactly how a unit would decide.</li>
+        <li><strong>Influence maps:</strong> let units weigh line of sight and facing when deciding where to move.</li>
+        <li><strong>Designer weights:</strong> a set of tunable weights let the designer adjust the priority of different behaviors without code changes.</li>
+      </ul>
+      <p>The designer was the system's first customer. He asked for features, and we iterated until the AI played the way he wanted. Near the end of the project, I also built localization support and string interpolation, and worked with the artists on fog of war. I later presented a talk on BattleTech's AI architecture at PAX Dev 2019 (<a href="#talks">see Talks</a>).</p>
+      <p class="aside">My favorite feedback: coworkers complaining that the AI was a little too good at taking them out with well-timed headshots.</p>
+    </article>
+
+    <article class="project">
+      <header>
+        <h3>Google Hangouts and Google Advisor</h3>
+        <p class="meta"><span>Google</span><span>Senior Software Engineer</span><span>March 2010 – February 2016</span><span>Web (JavaScript), iOS (Objective-C)</span></p>
+      </header>
+      <ul>
+        <li><strong>Google Hangouts:</strong> the JavaScript client that ran in the browser, including inside Gmail, and separately the dedicated iOS app, written in Objective-C. On iOS, I owned the accessibility features, making the app usable by people who rely on screen readers.</li>
+        <li><strong>Google Advisor:</strong> a tool for comparing mortgages, credit cards and savings accounts.</li>
+      </ul>
+    </article>
+  </section>
+
+  <section id="earlier" aria-labelledby="earlier-h">
+    <h2 id="earlier-h">Earlier work</h2>
+    <div class="studios">
+      <div class="studio">
+        <h3>PopCap Games</h3>
+        <ul><li><em>Bejeweled Blitz</em> (Facebook, Flash): as a contractor, built the results screen shown at the end of each game</li></ul>
+      </div>
+      <div class="studio">
+        <h3>Loose Cannon Studios</h3>
+        <ul><li><em>Tornado Outbreak</em> (Xbox 360, PS3, Wii): owned the "second player drop-in, anytime" feature</li></ul>
+      </div>
+      <div class="studio">
+        <h3>Leviathan Games</h3>
+        <ul>
+          <li><em>Target: Terror</em> (Wii): oversaw the port from a Linux-based arcade system to the Wii</li>
+          <li><em>Online Chess Kingdoms</em> (PSP): integrated an existing chess engine into a Virtools game project</li>
+        </ul>
+      </div>
+      <div class="studio">
+        <h3>Amaze Entertainment</h3>
+        <ul>
+          <li><em>The Lord of the Rings: Tactics</em> (PSP)</li>
+          <li><em>Samurai Jack: The Shadow of Aku</em> (PS2, GameCube, Xbox): lead engineer for cross-platform action gameplay</li>
+        </ul>
+      </div>
+      <div class="studio">
+        <h3>Monolith Productions</h3>
+        <ul>
+          <li><em>The Matrix Online</em> (PC): client team lead</li>
+          <li><em>The Operative: No One Lives Forever</em> (PS2)</li>
+          <li>LithTech game engine (PC, PS2)</li>
+        </ul>
+      </div>
+      <div class="studio">
+        <h3>Cavedog Entertainment</h3>
+        <ul><li><em>Total Annihilation: Boneyards</em> (PC)</li></ul>
+      </div>
+      <div class="studio">
+        <h3>Impressions Games</h3>
+        <ul>
+          <li><em>Lords of Magic</em> (PC): AI scripting</li>
+          <li><em>Civil War Generals 2</em> (PC): gameplay engineer</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section id="talks" aria-labelledby="talks-h">
+    <h2 id="talks-h">Talks</h2>
+    <article class="talk">
+      <h3>Show Me Your War Face! The Tactical AI of BattleTech</h3>
+      <p class="meta"><span>PAX Dev 2019</span><span>August 27, 2019</span><span>Co-presented with Kevin Maloney, BattleTech's AI designer</span></p>
+      <p>How do you make a squad of four enemy mechs fight as a team? This talk covered the behavior tree system I built from scratch for BattleTech: trees defined in XML, turned by a Python script into generated C# that was compiled into the game. Influence maps let units weigh line of sight and facing when choosing where to move, and a set of designer-facing weights let the designer adjust the priority of different behaviors.</p>
+    </article>
+    <article class="talk">
+      <h3>The Life of a Niantic Map Tile</h3>
+      <p class="meta"><span>PAX Dev 2019</span><span>August 27, 2019</span></p>
+      <p>How do you build a game world the size of the real world, and keep it up to date? This talk followed a map tile from start to finish: road and building data taken from OpenStreetMap, sliced into tiles on a latitude/longitude grid, and sent to the game as vector data for roads and building footprints. Game code then styled those shapes and turned them into playable 3D graphics.</p>
+    </article>
+  </section>
+
+  <section id="personal" aria-labelledby="personal-h">
+    <h2 id="personal-h">Personal projects</h2>
+    <div class="cards">
+      <article class="card">
+        <h3><a href="https://github.com/tsmaster/Partridge-Puzzle-Solver--w-Claude-Code-">Partridge Puzzle solver</a></h3>
+        <p>A complete search of Matt Parker's Partridge puzzle for n = 1 to 9: 18,656 tilings for n = 8 and 1,730,280 for n = 9 (216,285 counting rotations and reflections once). A backtracking solver I wrote in Python, ported to C++, then tuned and distributed with Claude Code: about 2,000× faster than the Python original, with work split across up to 10 workers. Companion <a href="https://github.com/tsmaster/Partridge-Solver-Tools">Python tools</a> handle distribution, progress and analysis.</p>
+        <p class="tags">C++ · Python · SQLite · Search</p>
+      </article>
+      <article class="card">
+        <h3><a href="https://github.com/tsmaster/raymarch">raymarch</a></h3>
+        <p>A raymarching renderer, written to learn Rust on a project-sized codebase.</p>
+        <p class="tags">Rust · Graphics</p>
+      </article>
+      <article class="card">
+        <h3><a href="https://github.com/tsmaster/bdg-compiler">BDG compiler</a></h3>
+        <p>"The compiler without a name, for the language without a reason." A compiler for my own language, targeting LLVM and WebAssembly through Emscripten.</p>
+        <p class="tags">Python · PLY · LLVM</p>
+      </article>
+      <article class="card">
+        <h3><a href="https://github.com/tsmaster/DWLAsm">DWLAsm</a></h3>
+        <p>A 6502 assembler for the Apple II, because writing one "couldn't be THAT hard."</p>
+        <p class="tags">Python · 6502 · Apple II</p>
+      </article>
+    </div>
+  </section>
+
+</main>
+
+<footer class="wrap site-footer">
+  <p><a href="https://www.linkedin.com/in/david-lecompte-283b0a/">LinkedIn</a> · <a href="https://github.com/tsmaster">GitHub</a></p>
+</footer>
+
+</body>
+</html>
